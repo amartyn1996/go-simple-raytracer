@@ -1,0 +1,43 @@
+<Shaders>
+	<Shader>
+		<ShaderName> "Blue" </ShaderName>
+		<Lambertian>
+			<DiffuseColor> 0.2 0.3 0.8 </DiffuseColor>
+		</Lambertian>
+	</Shader>
+</Shaders>
+
+<Scene>
+
+	<Camera>
+		<Pos> 5 4 3 </Pos>
+		<Dir> -5 -4 -3 </Dir>
+        	<ViewDistance> 5 </ViewDistance>
+        	<ViewWidth> 2.5 </ViewWidth>
+        	<ViewHeight> 2.5 </ViewHeight>
+        	<ImgWidth> 300 </ImgWidth>
+        	<ImgHeight> 300 </ImgHeight>
+	</Camera>
+
+	<Lights>
+		<Light>
+			<Pos> -3 4 5 </Pos>
+			<Color> 1 1 1 </Color>
+		</Light>
+	</Lights>
+	
+	<Surfaces>
+		<Sphere>
+			<Pos> 0 0 0 </Pos>
+			<Radius> 1 </Radius>
+			<ShaderName> "Blue" </ShaderName>
+		</Sphere>
+	</Surfaces>
+
+	<MinT> 0 </MinT>
+
+	<MaxT> 100000000 </MaxT>
+
+	<Epsilon> 0.0000000001 </Epsilon>
+
+</Scene>
