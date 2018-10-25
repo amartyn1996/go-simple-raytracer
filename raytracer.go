@@ -10,8 +10,8 @@ import (
 	"time"
 	"strings"
 	"github.com/amartyn1996/go-simple-vecmath"
-	"raytracer/rtcore"
-	"raytracer/parsers"
+	"./rtcore"
+	"./parsers"
 )
 
 func main() {

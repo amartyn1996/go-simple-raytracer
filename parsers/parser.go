@@ -6,7 +6,7 @@ import (
 	"bufio"
 	"strconv"
 	"github.com/amartyn1996/go-simple-vecmath"
-	"raytracer/rtcore"
+	"../rtcore"
 )
 
 
@@ -442,6 +442,7 @@ func surfaces() {
 func moreSurfaces() {
 	if lex.TOK == SPHERE_TOK {
 		parse.scene.Surfaces = append(parse.scene.Surfaces, sphere() )
+		moreSurfaces()
 	}
 }
 
